@@ -18,7 +18,7 @@ The selected wikiHow dataset encompasses approximately 215k data points
 For preliminary testing, 10% of the data was utilized for training and 5% for testing. Future scaling considerations will be contingent upon the outcomes of these initial tests.
 
 ### Data Preprocessing:
-Thorough preprocessing of the WikiHow dataset was conducted to ensure a robust foundation for subsequent model training. Missing values were removed to maintain data integrity. The Natural Language Toolkit (NLTK) library was employed for stopword removal, enhancing the textual content's quality. Dedicated functions, namely text_cleaner and summary_cleaner, were used to process the main text and headline summaries, preparing the data for training.
+Thorough preprocessing of the WikiHow dataset was conducted to ensure a robust foundation for subsequent model training. Missing values were removed to maintain data integrity. The Natural Language Toolkit (NLTK) library was employed for stopword removal, enhancing the textual content's quality. Dedicated functions, namely text_cleaner, and summary_cleaner, were used to process the main text and headline summaries, preparing the data for training.
 
 Train-Test split: The training dataset consists of 19,899 data points, resulting in a 75-25 split with the test dataset, which includes 4,976 data points.
 
@@ -39,6 +39,14 @@ Padding: Ensured uniform length of input sequences for efficient batch processin
  
 ### Evaluation Metrics
 ROUGE and BLEU scores are computed for each model for evaluation
+
+	Baseline		Pre-trained LLMs			Fine-Tuned LLMs	
+							
+Model/ Metrics	LSTM	Transformer	BART-base 	T5-small 	T5-small with prompt	T5-small Simple FT	T5-small LoRA FT
+BLEU	0	0	0.09	0.11	0.12	0.37	0.34
+ROUGE 1	0	0	0.105	0.3	0.2	0.232	0.33
+ROUGE 2	0	0	0	0.105	0.05	0.059	0.065
+ROUGE L	0	0	0.105	0.25	0.2	0.174	0.18
 
 <img width="568" alt="image" src="https://github.com/RohitMacherla3/wikiHow_text_summarization_llms/assets/89356811/5f374ced-a07b-4463-8641-2fe68108ebf1">
 
