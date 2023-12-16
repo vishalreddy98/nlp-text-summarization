@@ -40,4 +40,6 @@ Padding: Ensured uniform length of input sequences for efficient batch processin
 ### Evaluation Metrics
 ROUGE and BLEU scores are computed for each model for evaluation
 
+<img width="568" alt="image" src="https://github.com/RohitMacherla3/wikiHow_text_summarization_llms/assets/89356811/5f374ced-a07b-4463-8641-2fe68108ebf1">
+
 
