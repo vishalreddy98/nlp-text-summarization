@@ -16,4 +16,3 @@ Each article in the dataset has a title, a summary which is the concatenation of
 ### Dataset Specifications:
 The selected wikiHow dataset encompasses approximately 215k data points
 For preliminary testing, 10% of the data was utilized for training and 5% for testing. Future scaling considerations will be contingent upon the outcomes of these initial tests.
-
