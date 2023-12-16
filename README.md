@@ -16,3 +16,28 @@ Each article in the dataset has a title, a summary which is the concatenation of
 ### Dataset Specifications:
 The selected wikiHow dataset encompasses approximately 215k data points
 For preliminary testing, 10% of the data was utilized for training and 5% for testing. Future scaling considerations will be contingent upon the outcomes of these initial tests.
+
+### Data Preprocessing:
+Thorough preprocessing of the WikiHow dataset was conducted to ensure a robust foundation for subsequent model training. Missing values were removed to maintain data integrity. The Natural Language Toolkit (NLTK) library was employed for stopword removal, enhancing the textual content's quality. Dedicated functions, namely text_cleaner and summary_cleaner, were used to process the main text and headline summaries, preparing the data for training.
+
+Train-Test split: The training dataset consists of 19,899 data points, resulting in a 75-25 split with the test dataset, which includes 4,976 data points.
+
+Tokenization/Embeddings: Conversion of input text and target summaries into vector spaces suitable for model input was performed.
+
+Padding: Ensured uniform length of input sequences for efficient batch processing through end-based padding, accommodating the largest embedding size.
+
+### Models and Fine-Tuning Techniques Used
+- Baseline
+  1. seq2seq - LSTM
+  2. seq2seq - Transformer
+- Pre-trained
+  1. BART-Base
+  2. T5-Small
+- Fine-Tuning Techniques
+  1. Simple Fine-tuning
+  2. LoRA Fine-tuning
+ 
+### Evaluation Metrics
+ROUGE and BLEU scores are computed for each model for evaluation
+
+
