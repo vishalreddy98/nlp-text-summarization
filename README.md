@@ -1,11 +1,5 @@
 # wikiHow_text_summarization_llms
 
-
-### Team:
-1. Prashanth Aripirala
-2. Rohit Macherla
-3. Vishal Reddy Mekala
-
 ### Task - Text Summarization
 The project aims to utilize pre-trained Large Language Models (LLMs) for text summarization through diverse fine-tuning techniques. Comparative analysis with baseline RNN/LSTM language models is undertaken, utilizing established metrics such as Rouge score and BLEU.
 
@@ -18,7 +12,6 @@ The selected wikiHow dataset encompasses approximately 215k data points
 For preliminary testing, 10% of the data was utilized for training and 5% for testing. Future scaling considerations will be contingent upon the outcomes of these initial tests.
 
 <img width="468" alt="image" src="https://github.com/RohitMacherla3/wikiHow_text_summarization_llms/assets/89356811/ce4dccbb-7730-48f0-ade0-f4cd68f79d11">
-
 
 ### Data Preprocessing:
 Thorough preprocessing of the WikiHow dataset was conducted to ensure a robust foundation for subsequent model training. Missing values were removed to maintain data integrity. The Natural Language Toolkit (NLTK) library was employed for stopword removal, enhancing the textual content's quality. Dedicated functions, namely text_cleaner, and summary_cleaner, were used to process the main text and headline summaries, preparing the data for training.
